@@ -1,8 +1,10 @@
-package com.example.rosemberg.sinemaps;
+package com.example.rosemberg.sinemaps.activities;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.rosemberg.sinemaps.R;
 
 public class Splash extends Activity {
     int counter = 0;

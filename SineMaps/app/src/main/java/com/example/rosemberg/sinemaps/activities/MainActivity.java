@@ -1,7 +1,9 @@
-package com.example.rosemberg.sinemaps;
+package com.example.rosemberg.sinemaps.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.rosemberg.sinemaps.R;
 
 public class MainActivity extends AppCompatActivity {
 
