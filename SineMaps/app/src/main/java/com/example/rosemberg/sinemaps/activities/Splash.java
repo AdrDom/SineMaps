@@ -3,43 +3,23 @@ package com.example.rosemberg.sinemaps.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 import com.example.rosemberg.sinemaps.R;
 
-public class Splash extends Activity {
-    int counter = 0;
+public class Splash extends Activity implements Runnable{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        iniciaSplash();
-    }
-
-    public void iniciaSplash(){
         setContentView(R.layout.activity_splash);
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                counter++;
+        Handler handler = new Handler();
+        handler.postDelayed(this, 4000);
+    }
 
-                try {
-                    while(counter == 1 || counter <= 5){
-                        Thread.sleep(1000);
-                        counter++;
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-                if(counter == 6){
-                    Intent it = new Intent(Splash.this, MainActivity.class);
-                    startActivity(it);
-
-                    counter++;
-                }
-            }
-        }).start();
+    public void run(){
+        startActivity(new Intent(this, MainActivity.class));
+        finish();
     }
 }
