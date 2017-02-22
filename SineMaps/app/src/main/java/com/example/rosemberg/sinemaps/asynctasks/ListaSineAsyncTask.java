@@ -14,7 +14,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class ListaSineAsyncTask extends AsyncTask<String, Void, List<Sine>> {
 
     protected List<Sine> doInBackground(String... strings) {
