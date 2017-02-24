@@ -41,7 +41,8 @@
 
         <activity
             android:name=".activities.SineMapa"
-            android:label="@string/title_activity_sine_mapa"></activity>
+            android:label="@string/title_activity_sine_mapa" />
+        <activity android:name=".activities.PesqSinePorCod"></activity>
     </application>
 
 </manifest>

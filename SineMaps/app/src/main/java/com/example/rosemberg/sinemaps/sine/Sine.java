@@ -1,6 +1,6 @@
 package com.example.rosemberg.sinemaps.sine;
 
-public class Sine{
+public class Sine {
     private String codPosto;
     private String nome;
     private String entidadeConveniada;

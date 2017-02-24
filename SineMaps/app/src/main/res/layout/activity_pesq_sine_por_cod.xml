@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:weightSum="1"
+    tools:context="com.example.rosemberg.sinemaps.activities.ListaSineBrasil">
+
+    <TextView
+        android:text="PESQUISAR SINES POR CÓDIGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:layout_gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="22sp" />
+
+    <TextView
+        android:text="_____________________________________"
+        android:layout_width="418dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:layout_weight="0.05" />
+
+    <EditText
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Digite o código do sine"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:id="@+id/etSineCod"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Pesquisar"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btnPesquisar" />
+
+    <TextView
+        android:text="_____________________________________"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMostraSine" />
+
+</LinearLayout>

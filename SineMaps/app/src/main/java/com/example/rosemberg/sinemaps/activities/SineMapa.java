@@ -14,7 +14,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class SineMapa extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
