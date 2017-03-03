@@ -1,0 +1,21 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=3B:E7:BE:02:CD:9A:A0:02:C0:76:68:78:B8:5A:F6:31:62:E7:6D:B5%3Bcom.example.rosemberg.sinemaps.activities
+
+    You can also add your credentials to an existing key, using this line:
+    3B:E7:BE:02:CD:9A:A0:02:C0:76:68:78:B8:5A:F6:31:62:E7:6D:B5;com.example.rosemberg.sinemaps.activities
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyANyBv9mdNdOyfaZF46v6D8wzzmuuQoJ_w
+    </string>
+</resources>

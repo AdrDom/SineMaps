@@ -25,7 +25,7 @@
         android:layout_gravity="center"
         android:textSize="24sp"
         android:textColor="@android:color/background_dark"
-        android:layout_weight="0.15" />
+        android:layout_weight="0.10" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -51,7 +51,7 @@
         android:layout_gravity="center"
         android:textSize="24sp"
         android:textColor="@android:color/background_dark"
-        android:layout_weight="0.15" />
+        android:layout_weight="0.10" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -77,7 +77,33 @@
         android:layout_gravity="center"
         android:textSize="24sp"
         android:textColor="@android:color/background_dark"
-        android:layout_weight="0.15" />
+        android:layout_weight="0.10" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pesquisa"
+        android:id="@+id/btnPesqSinePorCod"
+        android:background="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:text="PESQUISAR SINE POR CÓDIGO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_gravity="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="_________________________________"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:layout_weight="0.10" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -103,6 +129,6 @@
         android:layout_gravity="center"
         android:textSize="24sp"
         android:textColor="@android:color/background_dark"
-        android:layout_weight="0.15" />
+        android:layout_weight="0.10" />
 
 </LinearLayout>
