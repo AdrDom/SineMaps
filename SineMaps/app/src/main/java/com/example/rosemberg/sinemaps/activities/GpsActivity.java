@@ -47,7 +47,7 @@ public class GpsActivity extends Activity implements LocationListener{
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_gps); criar activity
+        setContentView(R.layout.activity_sine_mapa);
         ListaSineAsyncTask = new ListaSineAsyncTask();
         init();
     }

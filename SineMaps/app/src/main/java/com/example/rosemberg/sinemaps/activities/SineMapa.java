@@ -2,6 +2,7 @@ package com.example.rosemberg.sinemaps.activities;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import com.example.rosemberg.sinemaps.activities.GpsActivity;
 
 import com.example.rosemberg.sinemaps.R;
 import com.google.android.gms.maps.CameraUpdateFactory;

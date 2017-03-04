@@ -27,7 +27,7 @@ public class Gps {
     //location
     private LocationManager lManager;
     private Location location;
-
+    //poe o onclick nesse
     public Gps(MainActivity main){
         this.main = main;
     }
