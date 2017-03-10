@@ -12,23 +12,34 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
+import android.content.Intent;
+import java.io.Serializable;
+import java.util.ArrayList;
 
+import com.example.rosemberg.sinemaps.activities.GpsActivity;
 import com.example.rosemberg.sinemaps.activities.MainActivity;
+import com.example.rosemberg.sinemaps.activities.SineMapa;
+import com.example.rosemberg.sinemaps.sine.Sine;
 
 /**
- * Created by adriell on 28/02/2017.
+ * Created by adriell on 04/03/2017.
  */
 
-public class Gps {
-    private MainActivity main;
-    private String latitude;
-    private String longitude;
-    //location
-    private LocationManager lManager;
-    private Location location;
-    //poe o onclick nesse
-    public Gps(MainActivity main){
-        this.main = main;
+public class Gps implements View.OnClickListener {
+    private GpsActivity gpsActivity = null;
+
+    public Gps(GpsActivity main){
+        this.gpsActivity = main;
+    }
+
+    @Override
+    public void onClick(View view){
+        if(gpsActivity != null){
+            Intent intent = new Intent(gpsActivity, SineMapa.class);
+            intent.putExtra("lat", Double.parseDouble(gpsActivity.getLatitude()));
+            intent.putExtra("long", Double.parseDouble(gpsActivity.getLongitude()));
+            intent.putExtra("lista", (ArrayList<Sine>) gpsActivity.getListaSines());
+            gpsActivity.startActivity(intent);
+        }
     }
 }

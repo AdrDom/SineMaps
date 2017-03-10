@@ -29,8 +29,8 @@ public class SineMapa extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng ifpb = new LatLng(-7.2361805, -35.915807);
-        mMap.addMarker(new MarkerOptions().position(ifpb).title("IFPB - Campina Grande"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(ifpb));
+        LatLng CG = new LatLng(getIntent().getDoubleExtra("lat", -7.219204), getIntent().getDoubleExtra("long", -35.882901));
+        mMap.addMarker(new MarkerOptions().position(CG).title("Campina Grande"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(CG));
     }
 }
